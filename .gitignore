@@ -1,0 +1,54 @@
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio local folders
+.vs/
+.vscode/
+
+# Rider
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+*.symbols.nupkg
+
+# Logs
+*.log
+
+# Entity Framework Migrations (opcional, só se você gerar no tempo de build)
+Migrations/
+
+# Secrets
+secrets.json
+
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
+# dotCover
+*.dotCover
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+
+# Others
+*.vsidx
+*.userprefs
