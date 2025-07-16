@@ -13,7 +13,5 @@ namespace ToDoList.Application.DTOs
         public string? StatusTask { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public DateTime UpdateDate { get; set; }
-
-        public User? User { get; set; }
     }
 }
