@@ -1,4 +1,6 @@
-﻿namespace ToDoList.Domain.Entities
+﻿using ToDoList.Domain.Enums;
+
+namespace ToDoList.Domain.Entities
 {
     public class TaskList
     {
@@ -7,8 +9,8 @@
         public string? Title { get; set; }
         public string? Description { get; set; }
         public DateTime DeadLine { get; set; }
-        public string? Priority { get; set; }
-        public string? StatusTask { get; set; }
+        public Priority? Priority { get; set; }
+        public StatusTask? StatusTask { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public DateTime UpdateDate { get; set; }
 

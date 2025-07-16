@@ -1,6 +1,6 @@
 ﻿namespace ToDoList.Domain.Enums
 {
-    public enum TaskStatus
+    public enum StatusTask
     {
         Pending = 1,
         InProgress = 2,

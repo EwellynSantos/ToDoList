@@ -19,6 +19,14 @@ namespace ToDoList.Infrastructure.Data
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<TaskList>()
+                .Property(t => t.StatusTask)
+                .HasConversion<string>();
+
+            modelBuilder.Entity<TaskList>()
+                .Property(t => t.Priority)
+                .HasConversion<string>();
+
+            modelBuilder.Entity<TaskList>()
                 .HasOne(t => t.User)
                 .WithMany()
                 .HasForeignKey(t => t.UserId)
